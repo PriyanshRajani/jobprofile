@@ -7,8 +7,8 @@
     justify-content: center;
     justify-content: space-around;
     padding: 6px;
-    color: white;
-    background-color: rgb(42,42,68);
+    color: rgb(64, 64, 64);
+    background-color: rgb(0, 0, 124);
 }
 
 .fnav .left{
@@ -47,7 +47,7 @@
     border: none;
     border-radius: 2px;
     background-color: rgb(244, 69, 98);
-    color: white;
+    color: rgb(83, 83, 83);
 }
 
 .right i{
@@ -60,8 +60,8 @@
     justify-content: center;
     justify-content: space-around;
     padding: 6px;
-    background-color: rgb(26,26,48);
-    color: white;
+    background-color: rgb(1, 204, 255);
+    color: rgb(59, 59, 59);
 }
 
 .sec-nav .s-left{
@@ -97,7 +97,7 @@
     justify-content: center;
     justify-content: space-around;
 }
-.card img{
+.card a{
     width: 18%;
     margin-block: 15px;
     border-radius: 5px; 
@@ -116,7 +116,7 @@
     margin-top: 11px;
 }
 .footer{
-    background-color: rgb(227, 218, 218);
+    background-color: rgb(109, 109, 109);
     padding: 33px;
     margin-top: 44px;
 }
