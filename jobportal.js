@@ -6,10 +6,8 @@ const PORT = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// Mock database
 const users = [];
 
-// User registration
 app.post('/register', (req, res) => {
   const { email, password } = req.body;
   if (!email || !password) {
@@ -20,7 +18,6 @@ app.post('/register', (req, res) => {
   return res.status(201).send('User registered successfully');
 });
 
-// User login
 app.post('/login', (req, res) => {
   const { email, password } = req.body;
   const user = users.find(u => u.email === email && u.password === password);
@@ -28,8 +25,4 @@ app.post('/login', (req, res) => {
     return res.status(401).send('Invalid email or password');
   }
   return res.status(200).send('Login successful');
-});
-
-app.listen(PORT, () => {
-  console.log(Server is running on port ${PORT});
 });
